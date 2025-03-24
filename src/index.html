@@ -74,7 +74,32 @@ eleventyNavigation:
 
 {% block body %}
 
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
 
-jklasdhkauhdfliehflihwelifhalitiawtuioaweyoiwaety
+<section id="hero-1059">
+  <div class="cs-container">
+    <div class="cs-content">
+      <!-- <h1 class="cs-title">Stitch Mechanics Now Serving Designers & Developers</h1>
+      <p class="cs-text">
+        We are the premier Stitch Design Pack for mechanics and auto body websites of all varieties.
+      </p> -->
+      <!-- <a href="" class="cs-button-solid">Explore Products</a> -->
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  <picture class="cs-background">
+    <source media="(max-width: 600px)"
+      srcset="../assets/images/cphile/IMG_8613.PNG">
+    <source media="(min-width: 601px)"
+      srcset="../assets/images/cphile/IMG_8613.PNG">
+    <img decoding="async" src="../assets/images/cphile/IMG_8613.PNG" alt="mechanic"
+      width="7000" height="1500" aria-hidden="true">
+  </picture>
+</section>
+
+
     {% include 'components/cta.html' %}
 {% endblock %}

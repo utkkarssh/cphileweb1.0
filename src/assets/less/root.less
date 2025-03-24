@@ -8,10 +8,10 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #ffba19;
+        --primary: #49b032;
         --primaryLight: #ffd675;
         --secondary: #001f3f;
-        --secondaryLight: #001f3f;
+        --secondaryLight: #e18834;
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
@@ -330,7 +330,7 @@
     #cs-navigation {
         z-index: 10000;
         position: fixed;
-        background-color: #fff;
+        background-color: transparent;
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
@@ -479,6 +479,7 @@
             opacity: 0;
             /* transition from these values */
             transform: translateX(calc(-40 / 16 * 1rem));
+
             margin-right: 0;
             width: 100%;
             list-style: none;
@@ -871,14 +872,14 @@
     #cs-navigation {
         z-index: 10000;
         position: fixed;
-        background-color: #fff;
+        background-color: transparent ; /* #fff */
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 (16/16rem);
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        box-shadow: rgba(149, 157, 165, 0) 0px 8px 24px;
 
         .cs-container {
             display: flex;
@@ -928,6 +929,7 @@
         .cs-li {
             padding: (32/16rem) 0;
             list-style: none;
+            // color: #fafbfc
             /* prevent flexbox from squishing it */
             flex: none;
         }

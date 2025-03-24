@@ -5,10 +5,10 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
+    --primary: #49b032;
     --primaryLight: #ffd675;
     --secondary: #001f3f;
-    --secondaryLight: #001f3f;
+    --secondaryLight: #e18834;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
@@ -271,7 +271,7 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: transparent;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -731,14 +731,15 @@
   #cs-navigation {
     z-index: 10000;
     position: fixed;
-    background-color: #fff;
+    background-color: transparent ;
+    /* #fff */
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "Roboto", "Arial", sans-serif;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
     display: flex;
