@@ -67,7 +67,7 @@
   }
   #sbs .cs-title {
     max-width: 50rem;
-    text-align: left;
+    text-align: center;
   }
   #sbs .cs-text {
     margin-bottom: 1rem;
@@ -126,6 +126,7 @@
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
+    max-width: 100%;
   }
   #sbs .cs-left {
     font-size: min(1.2vw, 1em);
@@ -133,6 +134,7 @@
   }
   #sbs .cs-right {
     margin: 0;
+    text-align: center;
   }
 }
 /* Dark Mode */
