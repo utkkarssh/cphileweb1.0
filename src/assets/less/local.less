@@ -8,6 +8,7 @@
   overflow: hidden;
   width: 100%;
   margin-top: 100px; /* Adjust this value to match the height of your navigation bar */
+  cursor: pointer; // Add pointer cursor for clickable areas
 }
 
 .carousel-container {
@@ -27,25 +28,4 @@
   max-width: 100%; /* Ensure the image doesn't overflow the container */
   display: block;
   margin: 0 auto; /* Center the image horizontally */
-}
-
-.carousel-prev,
-.carousel-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.carousel-prev {
-  left: 10px;
-}
-
-.carousel-next {
-  right: 10px;
 }

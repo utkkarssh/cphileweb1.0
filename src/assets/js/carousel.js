@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (carouselContainer && slides.length > 0) {
     let currentIndex = 0;
-    const slideInterval = 1500; // Time in milliseconds between slides
+    const slideInterval = 2500; // Time in milliseconds between slides
     let autoplay;
 
     function updateCarousel() {
@@ -44,6 +44,25 @@ document.addEventListener("DOMContentLoaded", () => {
         startAutoplay();
       });
     }
+
+    // Handle click on left and right sides of the carousel
+    carouselContainer.addEventListener("click", (event) => {
+      const containerWidth = carouselContainer.clientWidth;
+      const clickX = event.clientX;
+
+      stopAutoplay();
+
+      if (clickX < containerWidth / 2) {
+        // Clicked on the left side
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : slides.length - 1;
+      } else {
+        // Clicked on the right side
+        currentIndex = (currentIndex + 1) % slides.length;
+      }
+
+      updateCarousel();
+      startAutoplay();
+    });
 
     // Pause autoplay on hover
     carouselContainer.addEventListener("mouseenter", stopAutoplay);
